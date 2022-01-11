@@ -1,0 +1,55 @@
+
+:root {
+  --shadowSize: 25px;
+  --shadow: var(--shadowSize) var(--shadowSize) 0 2px rgba(238, 255, 0, 0.3), calc(var(--shadowSize) * -1) calc(var(--shadowSize) * -1) 0 2px rgba(0, 255, 0, 0.33);
+  --bigShadow: calc(var(--shadowSize) * 2) calc(var(--shadowSize) * 2) 0 2px rgba(255, 0, 0, 0.5), calc((var(--shadowSize) * 2) * -1) calc((var(--shadowSize) * 2) * -1) 0 2px rgba(0, 255, 0, 0.5);
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale3d(9, 1, 1) translateX(-10vw);
+    box-shadow: var(--bigShadow);
+ }
+  40% {
+    box-shadow: none;
+    transform: scale3d(1, 1, 1) translateX(0);
+ }
+  45% {
+    opacity: 1;
+    transform: scale3d(0.35, 1.8, 1);
+ }
+  75% {
+    box-shadow: none;
+    transform: scale3d(0.35, 1.8, 1);
+ }
+  80% {
+    box-shadow: var(--shadow);
+    transform: scale3d(1.1, 1, 1);
+ }
+  85% {
+    transform: scale3d(1.4, 1, 1);
+ }
+}
+.box {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  border: 2px solid #d3002a;
+  height: 100%;
+  transform-origin: 100% 50%;
+}
+
+.box p{
+  font-size: 20px;
+  display: block;
+  float:left;
+}
+.wrap {
+  padding: 0px;
+}
+.box, .wrap:active .box {
+  animation: appear 1s cubic-bezier(0.77, 0.33, 1, 0.72) 1;
+}
+

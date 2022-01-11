@@ -1,0 +1,395 @@
+@media only screen and (max-width: 770px) {
+
+  .navbar-nav{
+    display: -webkit-box !important;
+    width: inherit !important;
+  }
+
+  .navbar-collapse{
+    width: min-content !important;
+    display: contents;
+  }
+  
+  .nav-link{
+    padding: 0 !important;
+    display: flex !important;
+  }
+
+  .navbar-toggler{
+    margin-right: 5px;
+  }
+
+  .dilSecenegi{
+    display: none;
+  }
+
+  .pushable {
+    background: #fcba03;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    float:left;
+   
+  }
+  .front {
+    display: contents !important;
+    font-size: 12px !important;
+    background: #fcba03;
+
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  
+  .pushable:hover .front {
+    text-decoration: none;
+    display: inline-block;
+    transition: filter 250ms;
+    filter: brightness(110%);
+  }
+
+  .dilSenecekleri{
+    margin-top: -1px !important;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .categoryName{
+    font-size: 10px;
+  }
+
+  .urunlerTable{
+    font-size: 10px;
+  }
+
+  .baslik{
+    margin-top: revert;
+    font-size: 20px;
+  }
+
+  .paraBirimiH4 , .paraBirimiSelect {
+    margin-top: 15px !important;
+  }
+
+  .logoback {
+    width: 140% !important;
+    margin-left: 34% !important;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 900px) {
+  .qbc1 , .qbc2{
+    text-align: center;
+    display: flex;
+    left: 53% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .front{
+    padding: 0px !important;
+  }
+
+  .dropdown-toggle::after{
+    margin-top: 9px !important;
+  }
+
+  .pushable {
+    background: #fcba03;
+  }
+
+  .dilSecenegi{
+    margin-top:8px !important;
+  }
+
+  .dilSenecekleri{
+    font-size: 11px i !important;
+  }
+
+  .dilSenecekleri button{
+    font-size: 11px i !important;
+  }
+
+  .dilButton{
+    font-size: 11px !important;
+  }
+
+  .box p{
+    font-size: 12px !important;
+  }
+
+  
+}
+
+@media screen and (min-width: 770px) and (max-width: 1000px){
+  .logoback {
+    width: 110% !important;
+    margin-left: 17% !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  .logoback {
+    width: 80% !important;
+    margin-left: 17% !important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .box p{
+    font-size: 20px;
+  }
+  .dilSenecekleri{
+    margin-top: 18px !important;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1000px) {
+  .dilSenecekleri{
+     margin-top: 3px !important; 
+  }
+}
+
+.dilSenecekleri{
+  margin-left: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.hakkindaLogo{
+  width: 100%;
+}
+
+.sepet{
+  margin-right: 5px !important;
+}
+
+.dropdown-toggle::after{
+  margin-top: 23px !important;
+}
+
+.urunlerH3 {
+  float: left;
+}
+
+.paraBirimiBlok{
+  float: right;
+  margin-top: 3px;
+}
+
+.paraBirimiH4{
+  margin-top: 3px;
+  float: left;
+  margin-right: 5px;
+}
+
+.paraBirimiSelect {
+  float: right;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.dilSecenegi{
+ margin-top: 20px;
+}
+
+.pushable {
+  background: #fcba03;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  float:left;
+  display: block;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: #fcba03;
+  color: white;
+  transform: translateY(-6px);
+  float:left;
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.pushable:hover .front {
+  text-decoration: none;
+  display: inline-block;
+  transition: filter 250ms;
+  filter: brightness(110%);
+}
+
+.navtext {
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Raleway', sans-serif;
+	color: #fcba03;
+  float: left;
+  display: block;
+
+	border-radius: 1px;
+	text-shadow: 
+		0px 1px #0003, 
+		0px 1px 1px #d3002a;
+
+	box-shadow: 
+		0px 0px 0px 5px#fcba03,
+		0px 10px 0px 5px #d3002a,
+		0px 10px 10px 5px #0003;
+	cursor: pointer;
+	border-radius: 10px 30px 10px 30px;
+
+}
+
+.navtext p {
+	transform: rotate( 0deg);
+  color: #d3002a;
+}
+
+.navtext:hover {
+	animation: .8s morph ease infinite;
+}
+
+.navtext:hover p {
+	animation: .8s rot ease infinite;
+}
+
+@keyframes morph {
+	0% {
+		border-radius: 100px 30px 100px 30px;
+	} 50% {
+		border-radius: 30px 100px 30px 100px;
+	} 100% {
+		border-radius: 100px 30px 100px 30px;
+	}
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(-3deg);
+	} 50% {
+		transform: rotate(3deg);
+	} 100% {
+		transform: rotate(-3deg);
+	}
+}
+
+/* @keyframes slide-right {
+  from {
+    opacity:0;
+    -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+    filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+  }
+
+  to {
+    opacity:1;
+    -webkit-filter: drop-shadow(-4px 5px 5px rgba(240, 0, 0, 0.6));
+    filter: drop-shadow(-4px 5px 5px rgba(255, 0, 0, 0.6));
+  }
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+} */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} 
+
+.logoSolBar{
+  animation: slidein 1s;
+  width: 95%;
+  margin-top: 15%;
+  margin-left: 8%;
+}
+
+.App-logo{
+  position: relative;
+}
+
+@keyframes backAnimate {
+	0% {
+    height: 0;
+	} 100% {
+		bottom: 0;
+    height: 80%;
+	}
+}
+
+.logoLoading{
+  display: flex;
+  margin-top: 25%;
+}
+
+.logoLoadingText {
+  margin-left: -75px; 
+}
+
+
+.logoLoadingText {
+	position: absolute;
+	color: white;
+  margin-top: 20px;
+  left: 50%;
+  /* margin-left: -1.9em; */
+}
+
+@keyframes yukleniyor {
+	from { 
+    opacity: 0;
+    max-width: 0px;
+    /* filter:brightness(0%); */
+  }
+  to{ 
+    max-width: 250px;
+    opacity: 1;
+    /* filter:brightness(200%); */
+  }
+}
+
+.logoLoadingText:before {
+	content: attr(data-content);
+	position: absolute;
+	overflow: hidden;
+	color: #d3002a;
+	animation: yukleniyor 3.8s linear;
+  max-width: 200px;
+}
+
+.animasyon{
+  margin-top: -75px;
+}
+
+  
